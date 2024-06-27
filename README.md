@@ -77,3 +77,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Feel free to customize this README file further based on specific project details or additional instructions you want to include. Adjust the sections as necessary to fit the specifics of your Movie Data App project.# kpoint_assignment
 # kpoint_assignment
+
+https://delicate-jelly-584d93.netlify.app/
