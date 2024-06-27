@@ -1,0 +1,240 @@
+button {
+  border: none;
+  outline: none;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.genre-filter {
+  padding: 1px;
+  background-color: #484848;
+  position: fixed;
+  width: 100%;
+}
+.movie-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* 
+.MovieData {
+  margin-top: -10px;
+} */
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  margin-top: 145px;
+}
+
+.year-group {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  /* margin-top: 10px; */
+}
+
+.year-heading {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.movies-in-year {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 100%;
+  max-width: 299px;
+  margin: 10px;
+  background: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 340px;
+  display: block;
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.movie-rating {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.genre-buttons {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.genre-button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red-heading {
+  color: red;
+  margin-left: 5px;
+}
+
+.genre-buttons-container {
+  overflow-x: auto;
+}
+
+.genre-button.active {
+  background-color: red;
+  color: white;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #425df5;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-overlay {
+  position: fixed;
+  left: 41%;
+  top: 55%;
+}
+
+/* Media Queries
+@media (max-width: 1024px) {
+  .year-group {
+    margin-left: 50px;
+  }
+  .movie {
+    max-width: 30%;
+  }
+} */
+
+
+@media (max-width: 1200px) {
+  .year-group {
+    margin-left: 80px;
+  }
+  .movie {
+    max-width: 16%;
+  }
+  .movie-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .year-group {
+    margin-left: 60px;
+  }
+  .movie {
+    max-width: 20%;
+  }
+  .movie-title {
+    font-size: 16px;
+  }
+  .movie-poster{
+    height: 270px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .movie {
+    max-width: 30%;
+  }
+  .movies-in-year {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+  .movie-poster {
+    height: 250px;
+  }
+  .movie-title {
+    font-size: 16px;
+  }
+  .year-group {
+    margin-left: 0px;
+  }
+  .year-heading {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  .genre-buttons::-webkit-scrollbar {
+    display: none;
+  }
+  .genre-buttons {
+    -ms-overflow-style: none;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-in-year {
+    /* justify-content: space-between; */
+  }
+  .movie {
+    max-width: 48%; 
+    margin: 1%;
+  }
+  .movie-poster {
+    height: 250px;
+  }
+  .movie-title {
+    font-size: 14px;
+  }
+  .year-heading {
+    font-size: 20px;
+  }
+
+  .genre-filter{
+    height: 130px;
+
+  }
+  .genre-buttons-container {
+    overflow-x: auto;
+    margin-top: -15px;
+}
+.movie-list{
+  margin-top: 130px;
+}
+}
